@@ -1,0 +1,205 @@
+/* ==========================
+   GLOBAL STYLES
+========================== */
+
+.main .block-container {
+    max-width: 100%;
+    padding-top: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* ==========================
+   HEADER
+========================== */
+
+h1 {
+    color: #2563eb;
+    font-weight: 700;
+    text-align: center;
+}
+
+h2, h3 {
+    color: #1e40af;
+    font-weight: 600;
+}
+
+/* ==========================
+   SIDEBAR
+========================== */
+
+section[data-testid="stSidebar"] {
+    background: linear-gradient(
+        180deg,
+        #0f172a 0%,
+        #1e293b 100%
+    );
+}
+
+section[data-testid="stSidebar"] * {
+    color: white !important;
+}
+
+/* ==========================
+   METRIC CARDS
+========================== */
+
+[data-testid="metric-container"] {
+    background: white;
+    border-radius: 15px;
+    padding: 15px;
+    border-left: 5px solid #2563eb;
+    box-shadow: 0px 4px 12px rgba(0,0,0,0.12);
+}
+
+[data-testid="metric-container"]:hover {
+    transform: translateY(-3px);
+    transition: 0.3s;
+}
+
+/* ==========================
+   BUTTONS
+========================== */
+
+.stButton > button {
+    width: 100%;
+    border-radius: 10px;
+    border: none;
+    background: #2563eb;
+    color: white;
+    font-weight: bold;
+    padding: 0.6rem;
+}
+
+.stButton > button:hover {
+    background: #1d4ed8;
+    transition: 0.3s;
+}
+
+/* ==========================
+   INPUT BOXES
+========================== */
+
+.stTextInput input,
+.stNumberInput input,
+.stSelectbox {
+    border-radius: 8px !important;
+}
+
+/* ==========================
+   DATAFRAME
+========================== */
+
+[data-testid="stDataFrame"] {
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid #e5e7eb;
+}
+
+/* ==========================
+   SUCCESS MESSAGE
+========================== */
+
+.stSuccess {
+    border-radius: 10px;
+}
+
+/* ==========================
+   INFO BOX
+========================== */
+
+.stInfo {
+    border-radius: 10px;
+}
+
+/* ==========================
+   CHART CONTAINER
+========================== */
+
+.js-plotly-plot {
+    border-radius: 12px;
+    background-color: white;
+}
+
+/* ==========================
+   CUSTOM KPI CARDS
+========================== */
+
+.kpi-card {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.kpi-title {
+    color: #64748b;
+    font-size: 14px;
+}
+
+.kpi-value {
+    color: #2563eb;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+/* ==========================
+   TABLE STYLING
+========================== */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead tr {
+    background: #2563eb;
+    color: white;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+}
+
+/* ==========================
+   SCROLLBAR
+========================== */
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #2563eb;
+    border-radius: 10px;
+}
+
+/* ==========================
+   MOBILE RESPONSIVE
+========================== */
+
+@media screen and (max-width: 768px) {
+
+    .main .block-container {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    [data-testid="metric-container"] {
+        margin-bottom: 10px;
+    }
+
+    .stButton > button {
+        font-size: 14px;
+    }
+}

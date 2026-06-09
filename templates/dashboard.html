@@ -1,0 +1,25 @@
+<h1>AI Customer Intelligence Dashboard</h1>
+
+<ul>
+  <li><a href="/customers">📊 Customers</a></li>
+  <li><a href="/segmentation">🧠 Segmentation</a></li>
+</ul>
+
+<hr>
+
+<h3>Prediction Tools</h3>
+
+<form action="/churn" method="post">
+  <input name="Spending Score (1-100)" placeholder="Spending Score">
+  <button>Check Churn</button>
+</form>
+
+<form action="/purchase" method="post">
+  <input name="Annual Income (k$)" placeholder="Income">
+  <button>Predict Purchase</button>
+</form>
+
+<form action="/recommend" method="post">
+  <input name="customer_id" placeholder="Customer ID">
+  <button>Get Recommendations</button>
+</form>

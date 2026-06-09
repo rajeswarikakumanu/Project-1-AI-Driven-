@@ -1,0 +1,21 @@
+<h2>Customer Segmentation Result</h2>
+
+<table border="1">
+<tr>
+  <th>CustomerID</th>
+  <th>Age</th>
+  <th>Income</th>
+  <th>Spending Score</th>
+  <th>Cluster</th>
+</tr>
+
+{% for row in data %}
+<tr>
+  <td>{{ row['CustomerID'] }}</td>
+  <td>{{ row['Age'] }}</td>
+  <td>{{ row['Annual Income (k$)'] }}</td>
+  <td>{{ row['Spending Score (1-100)'] }}</td>
+  <td>{{ row['Cluster'] }}</td>
+</tr>
+{% endfor %}
+</table>
